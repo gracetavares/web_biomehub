@@ -1,0 +1,21 @@
+body{
+    font: 20px, Arial, Sans-serif;
+}
+
+.navbar{
+    background: #8c8ca2;
+}
+
+
+.margin{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}

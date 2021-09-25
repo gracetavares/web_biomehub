@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biomehub</title>
+    {% include "base.html" %} }
+</head>
+<body>
+<h1>Login</h1>
+<form action="submit" method="POST">{% csrf_token %}
+    <div align="center">
+        <label>Usuário:</label>
+        <input type="text" name="username">
+        <label>Senha:</label>
+        <input type="password" name="password">
+        <button type="submit">Entrar</button>
+    </div>
+</form>
+
+{% for message in messages %}
+<div align="center">
+    <br><br>
+    <strong>Erro! </strong>{{ message }}
+    <br><br>
+    <span style='font-size: 50px;'
+    > &#128546; </span>
+</div>
+{% endfor %}
+</body>
+</html>
